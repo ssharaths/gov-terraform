@@ -13,7 +13,7 @@ This repository shows you how to use Terraform to manage resources in Azure Gove
     cp terraform-sample.tf.template terraform-sample.tf
     ```
 
-2. Log in to Azure Government with the Azure CLI 
+1. Log in to Azure Government with the Azure CLI 
 
     ```bash
     # Log in
@@ -21,7 +21,7 @@ This repository shows you how to use Terraform to manage resources in Azure Gove
     az login
     ```
 
-3. Create an Azure AD service principal for Terraform and get all the values required for Terraform to communicate with Azure Government
+1. Create an Azure AD service principal for Terraform and get all the values required for Terraform to communicate with Azure Government
 
     ```bash
     # Get your subscription
@@ -37,9 +37,15 @@ This repository shows you how to use Terraform to manage resources in Azure Gove
     az ad sp create-for-rbac -n Terraform -role Contributor -scopes /subscriptions/$SUBSCRIPTION
     ```
 
-3. Update the values in the `provider "azure"` section of `terraform-sample.tf`.
+1. Update the values in the `provider "azure"` section of `terraform-sample.tf`.
 
-4. Deploy to Azure Government using Terraform.
+1. Initialize Terraform
+
+    ```bash
+    terraform init
+    ```
+
+1. Deploy to Azure Government using Terraform.
 
     ```bash
     terraform apply
