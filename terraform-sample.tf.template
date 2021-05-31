@@ -1,8 +1,8 @@
 provider "azurerm" {
-  subscription_id = "<REPLACE_WITH_ACCOUNT_ID>"
-  client_id       = "<REPLACE_WITH_APP_ID>"
-  client_secret   = "<REPLACE_WITH_PASSWORD>"
-  tenant_id       = "<REPLACE_WITH_TENANT_ID>"
+#  subscription_id = "<REPLACE_WITH_ACCOUNT_ID>"
+#  client_id       = "<REPLACE_WITH_APP_ID>"
+#  client_secret   = "<REPLACE_WITH_PASSWORD>"
+#  tenant_id       = "<REPLACE_WITH_TENANT_ID>"
   environment     = "usgovernment"
 }
 
